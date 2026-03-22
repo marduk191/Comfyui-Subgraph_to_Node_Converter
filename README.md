@@ -26,6 +26,7 @@ Flip dry_run = False and queue — files are written
 Restart ComfyUI — your new node appears in the category you chose
 
 Sockets:
+
 <img width="729" height="638" alt="image" src="https://github.com/user-attachments/assets/0b7c18c5-d576-418d-ab37-049b2b04e366" />
 <img width="719" height="182" alt="image" src="https://github.com/user-attachments/assets/e835d818-18d8-4e6c-be82-430d35eaf5bf" />
 
