@@ -42,16 +42,12 @@ category       →  "sampling/pipes"        menu location
 class_name     →  "MyKSamplerPipeNode"    Python class name in .py
 All four fall back gracefully if left blank. The status output always echoes the resolved values so you know exactly what was used.
 
-Supported Subgraph Formats
-Format	Storage location	ComfyUI version
-New subgraph	workflow["definitions"]["subgraphs"]	≥ Aug 2025
-Legacy group node	workflow["extra"]["groupNodes"]	< Aug 2025
-Bare subgraph file	The JSON file itself is the subgraph	any
-Generated Output
 Every run writes two files into output_directory:
 
 <snake_node_name>_node.py	The custom node class
+
 __init__.py	Package registration — re-scans all *_node.py files so multiple subgraphs can share the same output folder
+
 Converting multiple subgraphs? Just point them all at the same output_directory. The __init__.py is regenerated each time and picks up every node in the folder.
 
 After Converting
