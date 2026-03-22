@@ -47,14 +47,12 @@ Bare subgraph file	The JSON file itself is the subgraph	any
 Generated Output
 Every run writes two files into output_directory:
 
-File	Description
-File	Description
 <snake_node_name>_node.py	The custom node class
 __init__.py	Package registration — re-scans all *_node.py files so multiple subgraphs can share the same output folder
 Converting multiple subgraphs? Just point them all at the same output_directory. The __init__.py is regenerated each time and picks up every node in the folder.
 
 After Converting
-Make sure output_directory is inside (or symlinked into) ComfyUI/custom_nodes/
+Make sure output_directory is inside (or symlinked into) ComfyUI/custom_nodes/, default is ComfyUI/custom_nodes/subgraph_nodes
 
 Restart ComfyUI
 
