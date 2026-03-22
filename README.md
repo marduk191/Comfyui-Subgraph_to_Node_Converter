@@ -25,27 +25,11 @@ Flip dry_run = False and queue — files are written
 
 Restart ComfyUI — your new node appears in the category you chose
 
-Sockets
-Required
-Widget	Type	Description
-json_file	COMBO	Dropdown of .json files in ComfyUI/input/. Auto-refreshes when files are added.
-output_directory	STRING	Where to write the generated node pack. Defaults to custom_nodes/subgraph_nodes/.
-Optional
-Widget	Type	Description
-path_override	STRING	Absolute path to any .json file — overrides the picker entirely
-subgraph_name	STRING	Which subgraph to convert when the workflow has multiple. Blank = auto-pick (first/only)
-node_name	STRING	Internal key in NODE_CLASS_MAPPINGS — how ComfyUI identifies the node. Blank = subgraph name
-display_name	STRING	Label shown in the Add Node menu and the node's title bar. Blank = node_name
-category	STRING	Menu path. Use slashes for sub-menus, e.g. sampling/pipes. Blank = subgraph_nodes
-class_name	STRING	Python class identifier in the generated .py. Blank = CamelCase(node_name) + Node
-dry_run	BOOLEAN	Generate and preview code without writing any files (default: False)
-Outputs
-Socket	Type	Description
-generated_code	STRING	Full source of the generated .py — pipe to Show Text to inspect before writing
-output_path	STRING	Absolute path of the node file that was written
-status	STRING	Detailed success summary (names, paths) or a full error message
-Naming Fields Cheatsheet
-text
+Sockets:
+<img width="729" height="638" alt="image" src="https://github.com/user-attachments/assets/0b7c18c5-d576-418d-ab37-049b2b04e366" />
+<img width="719" height="182" alt="image" src="https://github.com/user-attachments/assets/e835d818-18d8-4e6c-be82-430d35eaf5bf" />
+
+Namning fields cheatsheet:
 subgraph name  →  "My KSampler Pipe"      (from the workflow JSON)
 
 node_name      →  "MyKSamplerPipe"        NODE_CLASS_MAPPINGS key
