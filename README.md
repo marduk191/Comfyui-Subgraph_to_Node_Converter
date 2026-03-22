@@ -1,5 +1,8 @@
 # Comfyui-Subgraph_to_Node_Converter
 
+NOTE: You must keep the nodes you used installed, this makes pointer files.
+
+<img width="1395" height="736" alt="Screenshot 2026-03-21 203416" src="https://github.com/user-attachments/assets/b6d6640e-2df6-44cb-8972-21aa3a29dd79" />
 
 ComfyUI Subgraph → Node Converter
 A single-file ComfyUI custom node that converts any subgraph saved inside a workflow JSON into a real, installable Python custom node — without ever leaving ComfyUI.
